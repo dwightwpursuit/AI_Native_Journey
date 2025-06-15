@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My AI Journey Begins!</title>
+    <!-- Load Tailwind CSS from CDN for easy styling -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        /* Custom font for a more polished look */
         body {
             font-family: 'Inter', sans-serif;
-            /* Using Inter font */
+        }
+        /* Simple animation for the button */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+        .animate-bounce-hover:hover {
+            animation: bounce 0.5s ease-in-out infinite;
         }
     </style>
 </head>
+<body class="bg-gradient-to-r from-blue-300 to-purple-400 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-lg shadow-2xl max-w-2xl w-full text-center transform hover:scale-105 transition-transform duration-300">
+        <!-- Add a relevant image at the top -->
+        <img src="https://placehold.co/400x150/000000/FFFFFF?text=AI+Journey" alt="Abstract representation of AI journey" class="mx-auto mb-6 rounded-lg shadow-md">
 
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
-    <div class="bg-white p-8 rounded-lg shadow-xl max-w-2xl w-full text-center">
-        <h1 class="text-3xl font-bold text-gray-800 mb-6">Welcome to My AI-Native Journey!</h1>
-        <p class="text-gray-700 leading-relaxed text-lg">
+        <h1 class="text-4xl font-extrabold text-indigo-700 mb-6">Welcome to My AI-Native Journey!</h1>
+        <p class="text-gray-700 leading-relaxed text-lg mb-8">
             Hello,
             <br><br>
-            Welcome to the beginning of my incredible AI-Native journey to learning how to code. This journey is
-            uniquely mine because: It's exciting to embark on this path with no previous coding knowledge, empowered by
-            AI's evolving capabilities. I’m entering the world of coding as an AI-Native, ready to effectively learn and
-            utilize AI to assist me as a beginner. My aspiration is clear: My goal to build projects using AI-powered
-            tools like Cursor is truly inspiring.
+            Welcome to the beginning of my incredible AI-Native journey to learning how to code. This journey is uniquely mine because: It's exciting to embark on this path with no previous coding knowledge, empowered by AI's evolving capabilities. I’m entering the world of coding as an AI-Native, ready to effectively learn and utilize AI to assist me as a beginner. My aspiration is clear: My goal to build projects using AI-powered tools like Cursor is truly inspiring.
             <br><br>
-            This will indeed be an interesting journey, growing from knowing absolutely nothing about coding to becoming
-            an application builder with AI by my side.
+            This will indeed be an interesting journey, growing from knowing absolutely nothing about coding to becoming an application builder with AI by my side.
             <br><br>
             Let's begin!
         </p>
+        <!-- Add a "Start Journey" button -->
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 animate-bounce-hover">
+            Start My AI Journey!
+        </button>
     </div>
 </body>
-
 </html>
